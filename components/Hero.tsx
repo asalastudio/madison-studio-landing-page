@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight, Play, Check } from 'lucide-react';
+import { ChevronRight, Check } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
@@ -27,32 +27,29 @@ const Hero: React.FC = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brass opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-brass"></span>
               </span>
-              AI-Powered Brand Intelligence
+              Invite-only paid pilots
             </div>
 
-            {/* Headline - Option C: Editorial Luxury */}
+            {/* Headline */}
             <h1 className="font-serif text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight text-ink-black leading-[1.1]">
-              Your brand&apos;s voice.<br />
-              <span className="italic text-charcoal">Finally captured.</span>
+              The studio for perfume, cosmetics &amp; jewelry shops.
             </h1>
 
             {/* Subtitle */}
             <p className="text-lg lg:text-xl text-charcoal/80 leading-relaxed max-w-xl">
-              Madison is the AI ghostwriter trained on legendary copywriters, not internet marketing. For brands that refuse to sound generic.
+              Madison trains on your brand once, then writes PDP stories, Etsy and Shopify listings, and social from the same master. Amazon and Temu are export templates during the pilot — not a push integration yet.
             </p>
-
-
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
               <a
-                href="https://app.madisonstudio.io/auth"
-                target="_self"
+                href="https://cal.com/team/madison-studio/demo"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="bg-brass text-parchment px-8 py-4 rounded-full text-base font-semibold hover:bg-brass/90 transition-all hover:shadow-xl hover:-translate-y-1 flex items-center justify-center gap-2 group relative overflow-hidden"
               >
                 <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer" />
-                <span>Start Creating</span>
+                <span>Request Invite</span>
                 <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
               <a
@@ -62,7 +59,7 @@ const Hero: React.FC = () => {
                 className="bg-transparent border-2 border-brass text-brass px-8 py-4 rounded-full text-base font-semibold hover:bg-brass/10 transition-all flex items-center justify-center gap-2"
               >
                 <ChevronRight className="w-4 h-4" />
-                <span>Schedule a Demo</span>
+                <span>Book a Pilot</span>
               </a>
             </div>
 
@@ -70,15 +67,15 @@ const Hero: React.FC = () => {
             <div className="pt-4 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm text-charcoal/60">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-sage" />
-                <span>No credit card required</span>
+                <span>Invite + paid 30-day pilots</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-sage" />
-                <span>14-day free trial</span>
+                <span>Etsy &amp; Shopify now</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-sage" />
-                <span>Set up in 5 minutes</span>
+                <span>Amazon &amp; Temu as templates</span>
               </div>
             </div>
           </div>

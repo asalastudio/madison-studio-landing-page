@@ -18,10 +18,10 @@ const Integrations: React.FC = () => {
               Shopify
             </span>
             
-            {/* Klaviyo */}
+            {/* Etsy */}
             <span className="font-bold text-4xl text-ink-black flex items-center gap-4">
               <svg viewBox="0 0 24 24" className="w-12 h-12 fill-current" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h4v16H4V4zm12 0l-6 8 6 8h-4l-4-5.5L12 10V4h4z"/></svg>
-              Klaviyo
+              Etsy
             </span>
 
             {/* Google Calendar */}

@@ -7,19 +7,19 @@ const HowItWorks: React.FC = () => {
       number: '1',
       icon: <Upload className="w-6 h-6" strokeWidth={1} />,
       title: 'Teach Madison Your Brand',
-      description: 'Upload your brand guidelines, website, and writing samples. Madison learns your voice, values, and visual style.',
+      description: 'Upload guidelines, a shop URL, and a handful of product photos. Madison learns voice, scent or materials language, and visual style.',
     },
     {
       number: '2',
       icon: <PenTool className="w-6 h-6" strokeWidth={1} />,
       title: 'Create Your Master Content',
-      description: 'Write a blog post, email, or product story with AI assistance that actually sounds like you.',
+      description: 'Write a PDP story or listing master with AI assistance that actually sounds like your shop — you approve every word.',
     },
     {
       number: '3',
       icon: <Layers className="w-6 h-6" strokeWidth={1} />,
       title: 'Multiply Across Channels',
-      description: 'One click generates Instagram posts, tweets, LinkedIn updates, emails, and more—all adapted for each platform.',
+      description: 'Turn one master into Etsy and Shopify listing packs plus social. Amazon and Temu stay as export templates until we ship those integrations.',
     },
     {
       number: '4',

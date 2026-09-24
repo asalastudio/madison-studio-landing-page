@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
               alt="Madison Studio"
               className="h-24 mb-6 mx-auto md:mx-0 md:-ml-10 object-contain opacity-90 hover:opacity-100 transition-opacity"
             />
-            <p className="text-stone-400 text-base tracking-wide">Authentic Intelligence by Asala</p>
+            <p className="text-stone-400 text-base tracking-wide">Invite-only studio for perfume, cosmetics &amp; jewelry shops. Authentic Intelligence by Asala.</p>
           </div>
 
           {/* Links */}
@@ -57,11 +57,6 @@ const Footer: React.FC = () => {
 
         <div className="mt-16 pt-10 border-t border-stone-800 text-center md:text-left text-base text-stone-500 flex flex-col md:flex-row justify-between items-center">
           <p>© {currentYear} Madison Studio. All rights reserved.</p>
-          <div className="flex gap-6 mt-6 md:mt-0">
-            {/* Optional Social Placeholders */}
-            <div className="w-6 h-6 bg-white/10 rounded-full hover:bg-white/20 transition-colors cursor-pointer"></div>
-            <div className="w-6 h-6 bg-white/10 rounded-full hover:bg-white/20 transition-colors cursor-pointer"></div>
-          </div>
         </div>
       </div>
     </footer>

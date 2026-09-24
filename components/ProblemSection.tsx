@@ -14,20 +14,20 @@ const ProblemSection: React.FC = () => {
                     <p className="text-xs font-bold text-brass uppercase tracking-widest mb-6">The Problem</p>
 
                     <h2 className="font-serif text-4xl lg:text-5xl font-medium mb-8 leading-tight">
-                        Content Creation Shouldn't Feel Like Groundhog Day
+                        You should not rewrite every SKU for every channel
                     </h2>
 
                     <div className="text-lg lg:text-xl text-stone leading-relaxed space-y-6 max-w-3xl mx-auto">
                         <p>
-                            You write a great blog post. Then you rewrite it for Instagram. Then again for email. Then LinkedIn. Then Twitter. By the time you're done, you've spent hours saying the same thing six different ways.
+                            You write a product story for the site. Then you flatten it for Etsy. Then again for Amazon fields. Then a caption. By Friday the scent notes, materials, and claims no longer match.
                         </p>
 
                         <p>
-                            Meanwhile, your brand voice gets diluted, your team gets burned out, and your content calendar stays perpetually behind.
+                            Owner-operated perfume, cosmetics, and jewelry shops feel this most: small catalogs, high craft, and marketplace copy that still has to sound like the brand.
                         </p>
 
                         <p className="font-accent italic text-2xl text-parchment pt-4">
-                            There's a better way.
+                            One master. Then the channels.
                         </p>
                     </div>
                 </div>

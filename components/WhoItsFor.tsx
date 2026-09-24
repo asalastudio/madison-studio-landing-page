@@ -1,27 +1,27 @@
 import React from 'react';
-import { ShoppingBag, Users, Shield, Building2 } from 'lucide-react';
+import { Flower2, Sparkles, Gem, Store } from 'lucide-react';
 
 const WhoItsFor: React.FC = () => {
     const audiences = [
         {
-            icon: <ShoppingBag className="w-6 h-6" strokeWidth={1} />,
-            title: 'E-Commerce Founders',
-            description: 'Create product stories, email campaigns, and social content without hiring a full marketing team.',
+            icon: <Flower2 className="w-6 h-6" strokeWidth={1} />,
+            title: 'Perfume & fragrance shops',
+            description: 'Owner-operators who need scent language, notes, and product stories that stay claim-safe across PDP and Etsy listings.',
         },
         {
-            icon: <Users className="w-6 h-6" strokeWidth={1} />,
-            title: 'Content Teams',
-            description: 'Multiply your output without multiplying your headcount. One writer becomes ten.',
+            icon: <Sparkles className="w-6 h-6" strokeWidth={1} />,
+            title: 'Cosmetics & beauty makers',
+            description: 'Small catalogs that still have to rewrite every SKU for the shop, social, and marketplace — from one brand brain.',
         },
         {
-            icon: <Shield className="w-6 h-6" strokeWidth={1} />,
-            title: 'Brand Managers',
-            description: 'Finally, AI that enforces brand guidelines instead of ignoring them.',
+            icon: <Gem className="w-6 h-6" strokeWidth={1} />,
+            title: 'Jewelry brands',
+            description: 'Materials, making, and collection copy that does not flatten into generic marketplace filler.',
         },
         {
-            icon: <Building2 className="w-6 h-6" strokeWidth={1} />,
-            title: 'Marketing Agencies',
-            description: 'Manage multiple client voices from one platform. Scale without sacrificing quality.',
+            icon: <Store className="w-6 h-6" strokeWidth={1} />,
+            title: 'Etsy, Amazon & Temu sellers',
+            description: 'Etsy and Shopify listings now. Amazon and Temu as field-map export templates in the pilot — we will not pretend we push there yet.',
         },
     ];
 
@@ -32,8 +32,11 @@ const WhoItsFor: React.FC = () => {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <p className="text-xs font-bold text-brass uppercase tracking-widest mb-4">Who It's For</p>
                     <h2 className="font-serif text-4xl lg:text-5xl font-medium text-ink-black tracking-tight">
-                        Built for Brands Who Care About Their Voice
+                        Built for marketplace beauty & jewelry shops
                     </h2>
+                    <p className="mt-6 text-charcoal/70 leading-relaxed">
+                        First wave: owner-ops with about 10–80 SKUs already selling on Etsy or Shopify — not agencies, not 500-SKU catalogs.
+                    </p>
                 </div>
 
                 {/* Audience Cards */}
