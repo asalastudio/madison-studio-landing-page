@@ -46,7 +46,7 @@ const faqData: FAQSection[] = [
       {
         q: "What is Madison Studio?",
         a: <>
-          <TextBlock>Madison Studio is a luxury AI-powered brand operating system designed specifically for beauty, fragrance, and creative e-commerce businesses. It helps you create, multiply, and manage brand-consistent content across all your marketing channels—from product descriptions to Instagram posts to email sequences.</TextBlock>
+          <TextBlock>Madison Studio is an invite-only brand operating system for perfume, cosmetics, and jewelry shops that sell on marketplaces. It helps owner-operators create PDP stories, Etsy and Shopify listings, and social from one brand brain — plus on-brand product images. Amazon and Temu are export templates during the paid pilot, not a push integration.</TextBlock>
         </>
       },
       {
@@ -54,11 +54,10 @@ const faqData: FAQSection[] = [
         a: <>
           <TextBlock>Madison Studio is built for:</TextBlock>
           <ListBlock items={[
-            "Luxury beauty & fragrance brands (perfume, skincare, cosmetics, candles)",
-            "E-commerce businesses selling premium products ($100+ price points)",
-            "Creative agencies managing multiple client brands",
-            "Small marketing teams (2-10 people) needing consistent brand voice",
-            "Solo entrepreneurs who want agency-quality content without agency costs"
+            "Owner-operated perfume, cosmetics, and jewelry shops (about 10–80 SKUs)",
+            "Sellers already on Etsy and/or Shopify who need on-brand PDP and listing copy",
+            "Shops considering Amazon or Temu who need honest export templates — not a fake push",
+            "Founders who will pay for a 30-day guided pilot and give weekly feedback"
           ]} />
         </>
       },
@@ -69,7 +68,7 @@ const faqData: FAQSection[] = [
           <ListBlock items={[
             "Sophisticated copy that matches luxury positioning (not hype or urgency tactics)",
             "Brand voice consistency across all channels",
-            "E-commerce optimization built-in (Shopify, Etsy integration)",
+            "Marketplace listing tools for Etsy and Shopify (Amazon/Temu as export templates in the pilot)",
             "Multi-channel repurposing (create once, multiply everywhere)",
             "Visual + verbal content in one platform"
           ]} />
@@ -80,7 +79,7 @@ const faqData: FAQSection[] = [
         a: <>
           <TextBlock>Most users are creating their first content within 10-15 minutes:</TextBlock>
           <OrderedListBlock items={[
-            "Sign up (2 minutes)",
+            "Book a pilot call and receive your invite",
             "Upload brand guidelines or let Madison scan your website (3-5 minutes)",
             "Generate your first content piece (2-3 minutes)",
             "Save to library and start multiplying"
@@ -93,11 +92,11 @@ const faqData: FAQSection[] = [
       },
       {
         q: "Is there a free trial?",
-        a: <TextBlock>Yes! We offer a 14-day free trial with full access to all features. No credit card required to start. You can explore Create, Multiply, Library, Image Studio, and Calendar before committing to a paid plan.</TextBlock>
+        a: <TextBlock>Not during this wave. Madison is invite-only with paid 30-day pilots. Request an invite or book a pilot call — we do not offer an open 14-day free trial or open self-serve signup.</TextBlock>
       },
       {
-        q: "What happens after my free trial ends?",
-        a: <TextBlock>After 14 days, you'll be prompted to choose a subscription plan (Starter, Growth, or Studio). Your content and brand settings are preserved. If you don't upgrade, you can still access your content in read-only mode for 30 days.</TextBlock>
+        q: "How do I get access?",
+        a: <TextBlock>Request an invite or book a pilot via the Cal.com calendar on this site. If you are a fit (perfume, cosmetics, or jewelry shop selling on Etsy/Shopify), we will provision an org and walk you through brand onboarding. Membership after the pilot maps to Essentials ($49), Studio ($149), or Signature ($349).</TextBlock>
       }
     ]
   },
@@ -213,7 +212,7 @@ const faqData: FAQSection[] = [
             "Email newsletters (single or multi-part sequences)",
             "Social media posts (Instagram, LinkedIn, Facebook, Twitter/X, TikTok)",
             "Product descriptions (e-commerce optimized)",
-            "Marketplace listings (Etsy, Shopify, Amazon)",
+            "Marketplace listings (Etsy, Shopify; Amazon/Temu export templates in the pilot)",
             "Video scripts (YouTube, TikTok)",
             "SMS messages (160 character limit)",
             "Press releases",
@@ -431,7 +430,7 @@ const faqData: FAQSection[] = [
     questions: [
       {
         q: "What marketplaces does Madison support?",
-        a: <TextBlock>Madison currently supports Shopify (full sync), Etsy (listing generation & CSV), TikTok Shop (listing generation & CSV), and Amazon (coming soon).</TextBlock>
+        a: <TextBlock>Today: Etsy (listing generation and push) and Shopify (store connection and listing tools), plus TikTok Shop listing generation. Amazon and Temu are not productized integrations yet. During the pilot we can provide export templates for those channels — we will not claim a one-click Amazon or Temu push.</TextBlock>
       },
       {
         q: "How do I connect my Shopify store?",
@@ -466,7 +465,7 @@ const faqData: FAQSection[] = [
       },
       {
         q: "How many team members can I have?",
-        a: <TextBlock>Starter plan includes 3 members. Growth plan includes 10 members. Studio plan includes unlimited team members.</TextBlock>
+        a: <TextBlock>Essentials includes 1 member. Studio includes 5 members. Signature includes unlimited team members. Pilot seats are confirmed on invite.</TextBlock>
       },
       {
         q: "Can multiple people edit the same content?",
@@ -786,7 +785,7 @@ const HelpCenter: React.FC = () => {
                     Email Support
                   </Button>
                   <Button variant="outline" onClick={() => window.location.href = 'https://cal.com/team/madison-studio/demo'}>
-                    Book a Training Call
+                    Book a Pilot
                   </Button>
                 </div>
                 <p className="mt-6 text-sm text-stone-500">Response time: Within 24 hours</p>

@@ -18,25 +18,25 @@ const FinalCTA: React.FC = () => {
 
       <div className="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center text-ink-black">
         <h2 className="font-serif text-4xl lg:text-5xl xl:text-6xl mb-4 leading-tight">
-          Your Brand Has Something to Say.
+          Ready to run a 30-day pilot?
         </h2>
         <h2 className="font-serif text-4xl lg:text-5xl xl:text-6xl mb-8 leading-tight italic">
-          Let Madison Help You Say It Everywhere.
+          Request an invite. We will book the studio with you.
         </h2>
 
         <p className="text-xl text-ink-black/80 mb-12 max-w-2xl mx-auto">
-          Start your 14-day free trial. No credit card required.<br />
-          Upload your brand, create your first piece, and watch it multiply.
+          Madison is invite-only while we take a small cohort of perfume, cosmetics, and jewelry shops through a paid pilot.<br />
+          No open signup. No 14-day free trial.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
           <a
-            href="https://app.madisonstudio.io/auth"
-            target="_self"
+            href="https://cal.com/team/madison-studio/demo"
+            target="_blank"
             rel="noopener noreferrer"
             className="bg-ink-black text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-charcoal transition-all hover:scale-105 shadow-xl w-full sm:w-auto flex items-center justify-center gap-2 group"
           >
-            <span>Start Creating for Free</span>
+            <span>Request Invite</span>
             <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" strokeWidth={1} />
           </a>
         </div>
@@ -50,11 +50,11 @@ const FinalCTA: React.FC = () => {
             className="flex items-center gap-2 hover:text-ink-black transition-colors"
           >
             <Calendar className="w-4 h-4" strokeWidth={1} />
-            <span>Book a demo</span>
+            <span>Book a Pilot</span>
           </a>
           <span className="hidden sm:block">·</span>
           <a
-            href="#help"
+            href="#/help"
             className="flex items-center gap-2 hover:text-ink-black transition-colors"
           >
             <HelpCircle className="w-4 h-4" strokeWidth={1} />

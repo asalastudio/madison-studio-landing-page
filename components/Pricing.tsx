@@ -11,14 +11,14 @@ const Pricing: React.FC = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Calculations for yearly billing (10x monthly price effectively giving 2 months free)
+  // Yearly = 10× monthly (2 months included). Names and monthly $ match the studio app.
   const tiers = [
     {
-      name: "Atelier",
-      description: "For independent creators and boutique brands establishing their voice.",
+      name: "Essentials",
+      description: "For independent perfume, cosmetics, and jewelry shops establishing a single brand voice.",
       prices: {
         monthly: "$49",
-        yearly: "$470"
+        yearly: "$490"
       },
       period: {
         monthly: "/mo",
@@ -32,16 +32,16 @@ const Pricing: React.FC = () => {
         "1 team member",
         "Email support (48h SLA)"
       ],
-      cta: "Enter the Atelier",
+      cta: "Request Invite",
       variant: "outline" as const,
       popular: false
     },
     {
       name: "Studio",
-      description: "For growing brands demanding scale, speed, and consistency.",
+      description: "For growing shops that need Etsy and Shopify listing packs from one master.",
       prices: {
-        monthly: "$199",
-        yearly: "$1,990"
+        monthly: "$149",
+        yearly: "$1,490"
       },
       period: {
         monthly: "/mo",
@@ -53,21 +53,21 @@ const Pricing: React.FC = () => {
         "3 organizations / 100 products",
         "100 images / 2,000 Madison queries",
         "5 team members",
-        "Marketplace integrations enabled",
-        "Priority email support (24h)",
-        "White-label available as add‑on"
+        "Etsy + Shopify marketplace tools",
+        "Amazon / Temu export templates in pilot",
+        "Priority email support (24h)"
       ],
-      cta: "Upgrade to Studio",
+      cta: "Book a Pilot",
       variant: "primary" as const,
       popular: true,
       highlight: "Most Popular"
     },
     {
-      name: "Maison",
-      description: "For creative agencies and brand holdings requiring maximum power.",
+      name: "Signature",
+      description: "For multi-brand operators who need higher image volume and white-glove support.",
       prices: {
-        monthly: "$599",
-        yearly: "$5,990"
+        monthly: "$349",
+        yearly: "$3,490"
       },
       period: {
         monthly: "/mo",
@@ -79,10 +79,10 @@ const Pricing: React.FC = () => {
         "Unlimited organizations, products",
         "500 images / 10,000 Madison queries",
         "Unlimited team members",
-        "Marketplace + API access + white-label included",
+        "Marketplace tools + API + white-label",
         "Phone/Slack support (4h SLA)"
       ],
-      cta: "Contact Sales",
+      cta: "Book a Pilot",
       variant: "secondary" as const,
       popular: false
     }
@@ -125,13 +125,13 @@ const Pricing: React.FC = () => {
           {/* Header */}
           <div className="text-center max-w-3xl mx-auto mb-16 animate-slide-up">
             <div className="inline-block mb-4 px-4 py-1.5 rounded-full bg-stone-100 border border-stone-200">
-              <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">Membership</span>
+              <span className="text-xs font-bold text-stone-500 uppercase tracking-widest">Pilot pricing on invite</span>
             </div>
             <h1 className="font-serif text-5xl md:text-6xl text-ink-black mb-6">
-              Invest in your brand's <br /> <span className="italic text-muted-gold">operating system.</span>
+              Membership that matches <br /> <span className="italic text-muted-gold">the studio app.</span>
             </h1>
             <p className="text-xl text-ink-black/60 font-light">
-              Stop paying per-seat for disjointed tools. Madison unifies your creative stack.
+              Essentials, Studio, and Signature — the same names and monthly prices as in-app billing. Access is invite-only during the paid pilot wave. No open 14-day trial.
             </p>
 
             {/* Toggle */}
@@ -247,15 +247,12 @@ const Pricing: React.FC = () => {
             </div>
           </div>
 
-          {/* Trust Strip */}
+          {/* Honest channel strip — no borrowed mega-brand logos */}
           <div className="mt-24 pt-16 border-t border-stone-200 text-center">
-            <p className="text-sm font-bold tracking-widest text-stone-400 uppercase mb-8">Trusted by modern brands</p>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 text-stone-300 grayscale opacity-70 hover:opacity-100 transition-opacity">
-              <div className="flex items-center gap-2"><Building2 size={24} /><span className="font-serif font-bold text-xl">VOGUE</span></div>
-              <div className="flex items-center gap-2"><Users size={24} /><span className="font-serif font-bold text-xl">GLOSSIER</span></div>
-              <div className="flex items-center gap-2"><Zap size={24} /><span className="font-serif font-bold text-xl">AESOP</span></div>
-              <div className="flex items-center gap-2"><Star size={24} /><span className="font-serif font-bold text-xl">BYREDO</span></div>
-            </div>
+            <p className="text-sm font-bold tracking-widest text-stone-400 uppercase mb-4">Channels we will not over-claim</p>
+            <p className="max-w-2xl mx-auto text-ink-black/60 leading-relaxed">
+              Etsy and Shopify listings now. TikTok Shop listing generation is available in the product. Amazon and Temu are export templates during the pilot — not productized push integrations.
+            </p>
           </div>
 
         </div>

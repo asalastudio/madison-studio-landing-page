@@ -4,16 +4,16 @@ import ScrollReveal from './ui/ScrollReveal';
 const TargetAudience: React.FC = () => {
   const personas = [
     {
-      role: "Founder / Operator",
-      desc: "You run a growing e-commerce brand and wear too many hats. Madison helps you capture your brand brain once, then execute campaigns consistently without micro-managing every word."
+      role: "Perfume & fragrance shops",
+      desc: "You sell scent on Etsy or Shopify and rewrite notes, stories, and claims for every channel. Madison captures the brand brain once, then drafts PDP and listing copy you actually approve."
     },
     {
-      role: "Marketing & Content Teams",
-      desc: "You lead a small team and need consistency across channels and freelancers. Madison gives you one place for briefs, brand rules, content, and scheduling."
+      role: "Cosmetics & jewelry makers",
+      desc: "You are the operator. Catalog is 10–80 SKUs, not an agency roster. Madison keeps ingredients, materials, and voice consistent across listings and social."
     },
     {
-      role: "Agencies & Studios",
-      desc: "You manage multiple client brands and can’t afford chaos. Madison keeps each client’s brand knowledge, content, and calendars separated but structured."
+      role: "Marketplace sellers (honest scope)",
+      desc: "Etsy and Shopify now. Amazon and Temu as export templates during the paid pilot — we will not promise a one-click push we have not shipped."
     }
   ];
 

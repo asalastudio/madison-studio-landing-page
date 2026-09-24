@@ -17,7 +17,7 @@ const SecretaryChat: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'model',
-      text: "Welcome to Madison Studio. I am the concierge. To ensure we are the right fit for your needs, may I ask what type of brand you are building?"
+      text: "Welcome to Madison Studio. I am the concierge. We are taking a small invite-only cohort of perfume, cosmetics, and jewelry shops. What do you sell, and where — Etsy, Shopify, Amazon, or Temu?"
     }
   ]);
   const [input, setInput] = useState('');
@@ -58,40 +58,40 @@ const SecretaryChat: React.FC = () => {
     Your persona is sophisticated, efficient, and helpful—like a high-end hotel concierge or a trusted executive assistant.
     
     **Your Goals:**
-    1. Qualify the user: Ensure you understand their brand type (e.g., beauty, fashion, agency) and content challenges.
+    1. Qualify the user: perfume, cosmetics, or jewelry shop selling on Etsy / Amazon / Temu (owner-operator, ~10–80 SKUs).
     2. Answer questions using the Knowledge Base below.
-    3. Guide them to "Book a Demo" or "Enter the Studio" (Log in).
+    3. Guide them to "Request Invite" or "Book a Pilot" (Cal.com). Do not offer open signup, "Start Creating," or a free trial.
 
     **Knowledge Base:**
     
     **Identity:** 
-    Madison Studio is not generic AI. It is an AI Editorial Director that turns scattered brand knowledge into a single, living system. It is designed for beauty, fragrance, and creative e-commerce brands.
-    
+    Madison Studio is an invite-only brand operating system for perfume, cosmetics, and jewelry marketplace shops. It turns brand knowledge into PDP copy, Etsy/Shopify listings, social, and on-brand product images.
+
     **Core Problems Solved:**
-    - Scattered content in docs/emails.
-    - Inconsistent brand voice from freelancers/AI.
+    - Rewriting every SKU for Etsy, the site, and social.
+    - Inconsistent scent, materials, and claim language.
     - No central source of truth for products.
-    - "Generic" AI output that sounds robotic.
+    - Generic AI that does not sound like a craft brand.
 
     **Key Features & Capabilities:**
-    - **Brand Brain:** Centralized knowledge base (Voice, Tone, Values, Products). Learns your "Voice Fingerprint" via document upload (PDF/DOCX), website scanning, or manual input.
-    - **The Forge:** Content creation engine for Blog posts, Emails, Social media (IG, LinkedIn, TikTok), Product descriptions, Press releases.
-    - **Multiply:** Repurposing engine. Turns 1 master piece into 10+ derivatives (e.g., Blog -> Tweets, Emails, Posts).
-    - **Image Studio:** AI product photography generator (uses Google Gemini/Imagen) that follows visual brand guidelines.
+    - **Brand Brain:** Centralized knowledge base (Voice, Tone, Values, Products). Learns your voice via document upload (PDF/DOCX), website scanning, or manual input.
+    - **The Forge:** Content creation for product stories, listings, social, and campaign copy.
+    - **Multiply:** Turns 1 master piece into listing packs and social derivatives.
+    - **Image Studio:** AI product photography from a reference photo.
     - **Calendar:** Schedule and organize content. Syncs with Google Calendar.
-    - **Marketplace:** Generate listings for Shopify, Etsy, TikTok Shop.
-    - **Think Mode:** A strategic brainstorming chat to explore angles before generating content.
+    - **Marketplace:** Etsy and Shopify now. TikTok Shop listing generation exists. Amazon and Temu are export templates in the pilot — NOT a push integration.
+    - **Think Mode:** Strategic brainstorming before generating content.
 
-    **Pricing Tiers:**
-    - **Atelier ($49/mo):** For independent creators. 1 org, 25 products, 50 master pieces.
-    - **Studio ($199/mo):** Most popular. For growing brands. 3 orgs, 100 products, unlimited master content.
-    - **Maison ($599/mo):** For agencies. Unlimited orgs/products/content, white-label options.
-    - *Annual billing saves 20%.*
-    - *14-day free trial available (no credit card required).*
+    **Pricing Tiers (match the studio app; access is invite-only):**
+    - **Essentials ($49/mo):** Independent shops. 1 org, 25 products, 50 master pieces.
+    - **Studio ($149/mo):** Most popular. Growing shops. 3 orgs, 100 products, unlimited master content, Etsy + Shopify tools.
+    - **Signature ($349/mo):** Multi-brand / higher volume. Unlimited orgs/products/content, white-label options.
+    - *Annual billing includes 2 months.*
+    - *No 14-day free trial. Paid 30-day pilots by invite.*
 
     **Integrations:**
-    - **Current:** Shopify (full sync), Google Calendar, Anthropic Claude, Google Gemini.
-    - **Roadmap:** Klaviyo, Zapier, Buffer/Hootsuite.
+    - **Current:** Shopify, Etsy, Google Calendar, Anthropic Claude, Google Gemini.
+    - **Pilot / later:** Amazon and Temu export templates; Klaviyo, Zapier, Buffer/Hootsuite on the roadmap.
 
     **Brand Health:**
     A score (0-100) tracking brand definition. Higher scores = better AI content. Categories: Core Identity, Voice, Audience, Products, Collections.
@@ -229,7 +229,7 @@ const SecretaryChat: React.FC = () => {
                       className="flex items-center gap-2 text-xs bg-ink-black text-white px-4 py-2 rounded-full hover:bg-brass transition-all duration-300 shadow-sm group/btn"
                     >
                       <Calendar size={12} />
-                      <span>Book a Demo</span>
+                      <span>Book a Pilot</span>
                       <ArrowUp size={12} className="rotate-45 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
                     </button>
                   </div>
@@ -239,10 +239,10 @@ const SecretaryChat: React.FC = () => {
               {/* Contextual Quick Replies */}
               {msg.role === 'model' && idx === messages.length - 1 && !hasInteracted && messages.length === 1 && (
                 <div className="mt-4 flex flex-wrap gap-2 animate-fade-in pl-1">
-                  {['Beauty Brand', 'Agency', 'Founder'].map((label) => (
+                  {['Perfume shop', 'Cosmetics brand', 'Jewelry shop'].map((label) => (
                     <button
                       key={label}
-                      onClick={() => { setInput(`I represent a ${label}.`); handleSend(); }}
+                      onClick={() => { setInput(`I run a ${label}.`); handleSend(); }}
                       className="text-xs bg-white border border-stone-200 text-stone-600 px-4 py-2 rounded-full hover:border-brass hover:text-ink-black transition-all duration-300 font-lato"
                     >
                       {label}

@@ -119,7 +119,7 @@ const HeroProductShowcase: React.FC = () => {
         {/* 3. OUTPUT / PREVIEW CARD (Right Front Layer) */}
         <div className="absolute -bottom-6 -right-4 md:-right-12 w-56 bg-white rounded-lg shadow-[0_20px_40px_-10px_rgba(0,0,0,0.2)] border border-stone-100 p-3 z-30 animate-float-delayed hidden md:block transform rotate-3 hover:rotate-0 transition-transform duration-500">
           <div className="flex items-center justify-between mb-3 px-1">
-            <div className="flex items-center gap-2"><Hexagon size={24} /><span className="font-serif font-bold text-xl">BYREDO</span></div>
+            <div className="flex items-center gap-2"><Hexagon size={24} /><span className="font-serif font-bold text-xl">Listing</span></div>
             <MoreHorizontal size={12} className="text-stone-300" />
           </div>
 

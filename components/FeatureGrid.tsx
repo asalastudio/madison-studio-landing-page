@@ -125,7 +125,7 @@ const FeatureGrid: React.FC = () => {
     {
       label: "Commerce",
       title: "Marketplace Tools",
-      description: "Create Etsy, TikTok Shop, and Shopify listings directly from your product data and master content, complete with SEO-smart titles and tags."
+      description: "Create Etsy and Shopify listings from your product data and master content. TikTok Shop listing generation is available. Amazon and Temu are export templates in the pilot — not a push."
     }
   ];
 

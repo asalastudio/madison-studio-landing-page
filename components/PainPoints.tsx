@@ -111,9 +111,9 @@ const PainPoints: React.FC = () => {
             solvedIcon: <Clock className="w-6 h-6 text-sage" />,
             chaosColor: 'bg-brass/10',
             calmColor: 'from-sage/10 to-parchment',
-            title: 'Time Drain',
-            problem: 'Spending 10+ hours a week reformatting the same content for different channels.',
-            solution: 'Create once, multiply everywhere. One piece becomes ten in seconds.',
+            title: 'Listing Drain',
+            problem: 'Rewriting every SKU for Etsy, the site, and social — then flattening it again for Amazon fields.',
+            solution: 'One PDP master. Etsy and Shopify listing packs now. Amazon and Temu as export templates.',
         },
         {
             icon: <FolderX className="w-6 h-6 text-charcoal" />,
